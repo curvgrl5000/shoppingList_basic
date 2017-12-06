@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 4px;
+    outline-color: turquoise;
+}
+
+button:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+label {
+    padding-right: .5rem;
+}
+
+#back{
+  height:auto; 
+  width: 100%;
+  background-color:yellow; 
+  transition:background-color 1s ease;
+}
+
+#error, #sale{
+  padding-top: .5rem;
+  color: yellow;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+button, input[type="text"] {
+  padding: 5px;
+}
+
+button {
+  background-color: white;
+  border-width: thin;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: yellow;
+    border-color: slategray;
+    color: slategray;
+}
+
+#shopping-list-item {
+  width: 250px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2%;
+
+}
+
+.shopping-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.shopping-list > li {
+  margin: 0 2% 20px;
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.shopping-item {
+  display: block;
+  color: grey;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.shopping-item__checked {
+  text-decoration: line-through;
+}
+
+.shopping-item-reset {
+    float: right;
+    background-color: black;
+    color: white;
+    width: 15%;
+}
+
+input#entry {
+    width: 35%;
+}
+
